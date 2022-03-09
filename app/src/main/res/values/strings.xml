@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Dice Roller</string>
+    <string name="hello_android">Hello Android!</string>
+    <string name="roll">Roll</string>
+    <string name="number">1</string>
+    <string name="buttonRoll">Let\'s roll</string>
 </resources>
