@@ -14,11 +14,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val button = binding.DiceRollerButton
-        val textView = binding.diceRollerText
-        button.text = getString(R.string.buttonRoll)
+        val imageView = binding.diceRollerImage
 
         button.setOnClickListener {
-            textView.text = rollDice().toString()
+            when(rollDice().toString().toInt()){
+                 1-> imageView.setImageResource(R.drawable.dice_1)
+                 2-> imageView.setImageResource(R.drawable.dice_2)
+                 3-> imageView.setImageResource(R.drawable.dice_3)
+                 4-> imageView.setImageResource(R.drawable.dice_4)
+                 5-> imageView.setImageResource(R.drawable.dice_5)
+                else-> imageView.setImageResource(R.drawable.dice_6)
+            }
         }
     }
     private fun rollDice(): Int {
