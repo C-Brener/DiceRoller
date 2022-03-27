@@ -8,7 +8,7 @@ class MainViewModel : ViewModel() {
     var drawableSet = MutableLiveData<Int>()
 
     init {
-        drawableSet.value = R.drawable.dice_1
+        drawableSet.value = R.drawable.empty_dice
     }
 
     fun rollDice() {
